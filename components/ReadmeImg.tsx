@@ -1,6 +1,6 @@
 import React from "react";
 
-const ReadMeImg: React.StatelessComponent<{ width: String, height: String }> = ({ children, width, height }) => (
+const ReadmeImg: React.StatelessComponent<{ width: String, height: String }> = ({ children, width, height }) => (
     <svg
       fill="none"
       width={width}
