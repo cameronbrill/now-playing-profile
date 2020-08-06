@@ -3,7 +3,7 @@ import React from 'react';
  import Text from '../Text';
 
   export interface Props {
-   trackLists: Array<Object>,
+   trackLists: Object[],
  }
 
   export const TopPlayed: React.FC<Props> = ({
