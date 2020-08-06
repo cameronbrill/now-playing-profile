@@ -3,6 +3,7 @@ import React from "react";
 const sizes = {
   default: 14,
   small: 12,
+  title: 18,
 };
 
 const colors = {

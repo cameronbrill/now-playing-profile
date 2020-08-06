@@ -1,7 +1,6 @@
 import React from "react";
 
-const ReadmeImg = ({ width, height, children }) => {
-  return (
+const ReadMeImg: React.StatelessComponent<{ width: String, height: String }> = ({ children, width, height }) => (
     <svg
       fill="none"
       width={width}
@@ -22,6 +21,5 @@ const ReadmeImg = ({ width, height, children }) => {
       </foreignObject>
     </svg>
   );
-};
 
 export default ReadmeImg;

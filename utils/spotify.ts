@@ -44,3 +44,19 @@ export async function nowPlaying() {
     return data;
   }
 }
+
+export async function topPlayed(timeRange) {
+  const Authorization = await getAuthorizationToken();
+  const response = await fetch(`https://api.spotify.com/v1/me/top/tracks?limit=5&time_range=${timeRange}`, {
+    headers: {
+      Authorization,
+    },
+  });
+  const { status } = response;
+  if (status === 204) {
+    return [];
+  } else if (status === 200) {
+    const data = await response.json();
+    return data.items;
+  }
+}
